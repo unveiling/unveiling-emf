@@ -29,7 +29,7 @@ Add the following repository to your `pom.xml` and then choose which EMF depende
 
 Include all EMF Facet features
 
-[source,xml
+[source,xml]
 ----
 <dependency>
     <groupId>org.atlanmod.emf</groupId>
@@ -51,7 +51,7 @@ Includes OCL, OCL Ecore and OCL UML.
     <version>1.0.2</version>
     <type>pom</type>
 </dependency>
------
+----
 
 === EMF Validation
 
@@ -65,7 +65,7 @@ Includes all EMF Validation features.
     <version>1.0.2</version>
     <type>pom</type>
 </dependency>
------
+----
 
 === EMF Transaction
 
@@ -79,8 +79,7 @@ Includes all EMF Transaction features.
     <version>1.0.2</version>
     <type>pom</type>
 </dependency>
------
-
+----
 
 === Eclipse EMF Artifacts
 
@@ -112,7 +111,6 @@ Includes all EMF Transaction features.
 </dependency>
 ----
 
-
 == Build steps
 
 === Versioning
@@ -135,16 +133,18 @@ $ mvn clean install
 > Only for contributors.
 
 Before releasing on maven central, make sure that pom versions end with `-SNAPSHOT` and
-MANIFEST versions <i>do not end</i> with `.qualifier`, but have the correct release version number.
+MANIFEST versions *do not end* with `.qualifier`, but have the correct release version number.
 
 To release on Bintray, execute:
 
-```
+[source,shell]
+----
 mvn release:clean release:prepare
-```
+----
 
 followed by:
 
-```
+[source,shell]
+----
 mvn release:perform
-```
+----
