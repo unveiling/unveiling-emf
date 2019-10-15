@@ -3,7 +3,7 @@
 
     <groupId>org.atlanmod.emf</groupId>
     <artifactId>emf-maven</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.2</version>
 
     <packaging>pom</packaging>
 
