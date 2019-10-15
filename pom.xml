@@ -49,6 +49,8 @@
         <module>org.eclipse.emf.common/org.eclipse.emf.common.p2</module>
         <module>org.eclipse.emf.edit</module>
         <module>org.eclipse.emf.edit/org.eclipse.emf.edit.p2</module>
+        <module>org.eclipse.ocl</module>
+        <module>org.eclipse.ocl/org.eclipse.ocl.p2</module>
     </modules>
 
     <dependencyManagement>
@@ -133,6 +135,11 @@
             <id>validation</id>
             <layout>p2</layout>
             <url>https://download.eclipse.org/modeling/emf/validation/updates/releases/</url>
+        </repository>
+        <repository>
+            <id>ocl</id>
+            <layout>p2</layout>
+            <url>https://download.eclipse.org/modeling/mdt/ocl/updates/releases/</url>
         </repository>
     </repositories>
 
