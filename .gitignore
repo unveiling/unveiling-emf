@@ -7,6 +7,14 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
+.project
+.classpath
+.settings
+target
+*.versionsBackup
+java-gen
+.idea
+*.iml
 
-# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
-!/.mvn/wrapper/maven-wrapper.jar
+## MAC Files
+.DS_Store
