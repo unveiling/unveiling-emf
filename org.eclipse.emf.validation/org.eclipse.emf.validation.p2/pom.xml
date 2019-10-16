@@ -56,13 +56,26 @@
                             <outputDirectory>${project.build.directory}/dependency</outputDirectory>
                             <overWriteReleases>false</overWriteReleases>
                             <overWriteSnapshots>true</overWriteSnapshots>
-                            <excludeTransitive>true</excludeTransitive>
-                            <excludeArtifactIds>
-                                org.eclipse.emf.ecore,
-                                org.eclipse.emf.common,
-                                org.eclipse.emf.ecore.xmi,
-                                org.eclipse.emf.ecore.change
-                            </excludeArtifactIds>
+                            <includeArtifactIds>
+                                org.eclipse.emf.validation.doc,
+                                org.eclipse.emf.validation.examples.adapter.source,
+                                org.eclipse.emf.validation.examples.adapter,
+                                org.eclipse.emf.validation.examples.general.source,
+                                org.eclipse.emf.validation.examples.general,
+                                org.eclipse.emf.validation.examples.ocl.source,
+                                org.eclipse.emf.validation.examples.ocl,
+                                org.eclipse.emf.validation.examples.source,
+                                org.eclipse.emf.validation.examples,
+                                org.eclipse.emf.validation.ocl.source,
+                                org.eclipse.emf.validation.ocl,
+                                org.eclipse.emf.validation.source,
+                                org.eclipse.emf.validation.tests,
+                                org.eclipse.emf.validation.ui.ide.source,
+                                org.eclipse.emf.validation.ui.ide,
+                                org.eclipse.emf.validation.ui.source,
+                                org.eclipse.emf.validation.ui,
+                                org.eclipse.emf.validation
+                            </includeArtifactIds>
                         </configuration>
                     </execution>
                 </executions>

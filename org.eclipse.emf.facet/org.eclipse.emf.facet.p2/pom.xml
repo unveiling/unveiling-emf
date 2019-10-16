@@ -56,15 +56,31 @@
                             <outputDirectory>${project.build.directory}/dependency</outputDirectory>
                             <overWriteReleases>false</overWriteReleases>
                             <overWriteSnapshots>true</overWriteSnapshots>
-                            <excludeTransitive>true</excludeTransitive>
-                            <excludeArtifactIds>
-                                org.eclipse.emf.ecore,
-                                org.eclipse.emf.common,
-                                org.eclipse.emf.ecore.xmi,
-                                org.eclipse.emf.ecore.change,
-                                org.eclipse.emf.validation,
-                                org.eclipse.emf.transaction
-                            </excludeArtifactIds>
+                            <includeArtifactIds>
+                                org.eclipse.emf.facet.util.emf.core,
+                                org.eclipse.emf.facet.util.emf.catalog,
+                                org.eclipse.emf.facet.util.core,
+                                org.eclipse.emf.facet.common.core,
+                                org.eclipse.emf.facet.query.java.core,
+                                org.eclipse.emf.facet.common.ui,
+                                org.eclipse.emf.facet.efacet.core,
+                                org.eclipse.emf.facet.efacet.metamodel,
+                                org.eclipse.emf.facet.custom.core,
+                                org.eclipse.emf.facet.custom.ui,
+                                org.eclipse.emf.facet.custom.metamodel,
+                                org.eclipse.emf.facet.efacet.ui,
+                                org.eclipse.emf.facet.util.ui,
+                                org.eclipse.emf.facet.widgets,
+                                org.eclipse.emf.facet.widgets.celleditors.ecore.source,
+                                org.eclipse.emf.facet.widgets.celleditors.ecore.tests.samplemm,
+                                org.eclipse.emf.facet.widgets.celleditors.ecore,
+                                org.eclipse.emf.facet.widgets.celleditors.edit.source,
+                                org.eclipse.emf.facet.widgets.celleditors.edit,
+                                org.eclipse.emf.facet.widgets.celleditors.editor.source,
+                                org.eclipse.emf.facet.widgets.celleditors.editor,
+                                org.eclipse.emf.facet.widgets.celleditors.source,
+                                org.eclipse.emf.facet.widgets.celleditors
+                            </includeArtifactIds>
                         </configuration>
                     </execution>
                 </executions>

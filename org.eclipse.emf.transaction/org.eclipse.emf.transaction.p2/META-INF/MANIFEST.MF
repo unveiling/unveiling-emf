@@ -11,14 +11,5 @@ Require-Bundle: org.eclipse.emf.transaction.doc,
  org.eclipse.emf.transaction.tests,
  org.eclipse.emf.transaction.ui.source,
  org.eclipse.emf.transaction.ui,
- org.eclipse.emf.transaction,
- org.eclipse.emf.workspace.doc,
- org.eclipse.emf.workspace.examples.library.editor.source,
- org.eclipse.emf.workspace.examples.library.editor,
- org.eclipse.emf.workspace.examples,
- org.eclipse.emf.workspace.source,
- org.eclipse.emf.workspace.tests,
- org.eclipse.emf.workspace.ui.source,
- org.eclipse.emf.workspace.ui,
- org.eclipse.emf.workspace
+ org.eclipse.emf.transaction
 
