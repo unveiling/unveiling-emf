@@ -35,7 +35,7 @@ Include all EMF Facet features
     <groupId>org.atlanmod.emf</groupId>
     <artifactId>org.eclipse.emf.facet</artifactId>
     <type>pom</type>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 </dependency>
 ----
 
@@ -48,7 +48,7 @@ Includes OCL, OCL Ecore and OCL UML.
 <dependency>
     <groupId>org.atlanmod.emf</groupId>
     <artifactId>org.eclipse.ocl</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <type>pom</type>
 </dependency>
 ----
@@ -62,7 +62,7 @@ Includes all EMF Validation features.
 <dependency>
     <groupId>org.atlanmod.emf</groupId>
     <artifactId>org.eclipse.emf.validation</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <type>pom</type>
 </dependency>
 ----
@@ -76,7 +76,7 @@ Includes all EMF Transaction features.
 <dependency>
     <groupId>org.atlanmod.emf</groupId>
     <artifactId>org.eclipse.emf.transaction</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <type>pom</type>
 </dependency>
 ----
