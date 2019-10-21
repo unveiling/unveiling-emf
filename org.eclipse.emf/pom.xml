@@ -50,6 +50,12 @@
             <groupId>org.eclipse.platform</groupId>
             <artifactId>org.eclipse.ui</artifactId>
             <version>${eclipse.platform.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.eclipse.platform</groupId>
+                    <artifactId>org.eclipse.swt</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.ibm.icu</groupId>
