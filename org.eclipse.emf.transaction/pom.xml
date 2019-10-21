@@ -18,7 +18,13 @@
         </dependency>
         <dependency>
             <groupId>org.atlanmod.emf</groupId>
-            <artifactId>org.eclipse.emf</artifactId>
+            <artifactId>org.eclipse.emf.ecore</artifactId>
+            <version>${project.version}</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>org.atlanmod.emf</groupId>
+            <artifactId>org.eclipse.emf.common</artifactId>
             <version>${project.version}</version>
             <type>pom</type>
         </dependency>

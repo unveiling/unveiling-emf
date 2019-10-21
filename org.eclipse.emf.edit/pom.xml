@@ -31,6 +31,7 @@
         <dependency>
             <groupId>org.eclipse.core</groupId>
             <artifactId>org.eclipse.core.runtime</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
