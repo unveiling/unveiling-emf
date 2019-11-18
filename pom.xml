@@ -43,6 +43,8 @@
         <module>org.eclipse.emf.validation/org.eclipse.emf.validation.p2</module>
         <module>org.eclipse.emf</module>
         <module>org.eclipse.emf/org.eclipse.emf.p2</module>
+        <module>org.eclipse.emf.codegen</module>
+        <module>org.eclipse.emf.codegen/org.eclipse.emf.codegen.p2</module>
         <module>org.eclipse.emf.ecore</module>
         <module>org.eclipse.emf.ecore/org.eclipse.emf.ecore.p2</module>
         <module>org.eclipse.emf.common</module>
