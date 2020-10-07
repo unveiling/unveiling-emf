@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>emf-maven</artifactId>
         <groupId>org.atlanmod.emf</groupId>
-        <version>1.0.7-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
+        <version>2.23.0-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>org.eclipse.emf.transaction.p2</artifactId>
-    <packaging>eclipse-plugin</packaging>
+    <artifactId>emf-maven-parent</artifactId>
+    <packaging>pom</packaging>
+
+    <properties>
+        <repackaging.file>${project.basedir}/src/main/assembly/repackaged.xml</repackaging.file>
+        <artifact.ids></artifact.ids>
+    </properties>
 
     <build>
         <plugins>
@@ -31,7 +38,6 @@
             <plugin>
                 <groupId>org.eclipse.tycho</groupId>
                 <artifactId>tycho-source-plugin</artifactId>
-                <version>${tycho.version}</version>
                 <executions>
                     <execution>
                         <id>plugin-source</id>
@@ -57,14 +63,7 @@
                             <overWriteReleases>false</overWriteReleases>
                             <overWriteSnapshots>true</overWriteSnapshots>
                             <includeArtifactIds>
-                                org.eclipse.emf.transaction.doc,
-                                org.eclipse.emf.transaction.examples.source,
-                                org.eclipse.emf.transaction.examples,
-                                org.eclipse.emf.transaction.source,
-                                org.eclipse.emf.transaction.tests,
-                                org.eclipse.emf.transaction.ui.source,
-                                org.eclipse.emf.transaction.ui,
-                                org.eclipse.emf.transaction
+                                ${artifact.ids}
                             </includeArtifactIds>
                         </configuration>
                     </execution>
@@ -74,10 +73,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>2.2.1</version>
                 <configuration>
                     <descriptors>
-                        <descriptor>src/main/assembly/repackaged.xml</descriptor>
+                        <descriptor>${repackaging.file}</descriptor>
                     </descriptors>
                 </configuration>
                 <executions>
@@ -91,12 +89,35 @@
                 </executions>
             </plugin>
         </plugins>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-maven-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-packaging-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-source-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>3.3.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>3.1.2</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
-    <repositories>
-        <repository>
-            <id>transaction</id>
-            <layout>p2</layout>
-            <url>https://download.eclipse.org/modeling/emf/transaction/updates/releases/</url>
-        </repository>
-    </repositories>
 </project>

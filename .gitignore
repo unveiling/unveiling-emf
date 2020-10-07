@@ -15,6 +15,7 @@ target
 java-gen
 .idea
 *.iml
+.java-version
 
 ## MAC Files
 .DS_Store

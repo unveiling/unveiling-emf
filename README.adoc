@@ -1,10 +1,19 @@
-= Maven artifacts for Eclipse EMF, Facet, and OCL
+= Maven artifacts for Eclipse EMF
 
-This repository contains the maven files necessary to build and release Eclipse http://wiki.eclipse.org/EMF[EMF],
-https://wiki.eclipse.org/EMF_Facet[Facet], and http://wiki.eclipse.org/ocl/[OCL]
+This repository contains the maven artifacts necessary to build and release Eclipse http://wiki.eclipse.org/EMF[EMF] plugins and features
 onto https://bintray.com[Bintray] or to simply build it on your machine.
 
 The builds on Bintray are available https://dl.bintray.com/sunye/AtlanMod[here].
+
+== Available versions
+
+|===
+| EMF-Maven version | EMF Version | Eclipse Version
+
+| 2.23.x
+| 2.23
+| 2020-12
+|===
 
 == Usage
 
@@ -25,84 +34,33 @@ Add the following repository to your `pom.xml` and then choose which EMF depende
     </repositories>
 ----
 
-=== EMF Facet
+== Eclipse EMF Artifacts
 
-Include all EMF Facet features
-
-[source,xml]
-----
-<dependency>
-    <groupId>org.atlanmod.emf</groupId>
-    <artifactId>org.eclipse.emf.facet</artifactId>
-    <type>pom</type>
-    <version>1.0.3</version>
-</dependency>
-----
-
-=== Eclipse OCL
-
-Includes OCL, OCL Ecore and OCL UML.
-
-[source,xml]
-----
-<dependency>
-    <groupId>org.atlanmod.emf</groupId>
-    <artifactId>org.eclipse.ocl</artifactId>
-    <version>1.0.3</version>
-    <type>pom</type>
-</dependency>
-----
-
-=== EMF Validation
-
-Includes all EMF Validation features.
-
-[source,xml]
-----
-<dependency>
-    <groupId>org.atlanmod.emf</groupId>
-    <artifactId>org.eclipse.emf.validation</artifactId>
-    <version>1.0.3</version>
-    <type>pom</type>
-</dependency>
-----
-
-=== EMF Transaction
-
-Includes all EMF Transaction features.
-
-[source,xml]
-----
-<dependency>
-    <groupId>org.atlanmod.emf</groupId>
-    <artifactId>org.eclipse.emf.transaction</artifactId>
-    <version>1.0.3</version>
-    <type>pom</type>
-</dependency>
-----
-
-=== Eclipse EMF Artifacts
-
+.EMF Commons
 [source, xml]
 ----
-<dependency>
-    <groupId>org.atlanmod.emf</groupId>
-    <artifactId>org.eclipse.emf</artifactId>
-    <type>pom</type>
-    <version>${atlanmod.emf.version}</version>
-</dependency>
 <dependency>
     <groupId>org.atlanmod.emf</groupId>
     <artifactId>org.eclipse.emf.common</artifactId>
     <type>pom</type>
     <version>${atlanmod.emf.version}</version>
 </dependency>
+----
+
+.EMF Ecore
+[source, xml]
+----
 <dependency>
     <groupId>org.atlanmod.emf</groupId>
     <artifactId>org.eclipse.emf.ecore</artifactId>
     <type>pom</type>
     <version>${atlanmod.emf.version}</version>
 </dependency>
+----
+
+.EMF Edit
+[source, xml]
+----
 <dependency>
     <groupId>org.atlanmod.emf</groupId>
     <artifactId>org.eclipse.emf.edit</artifactId>
@@ -111,13 +69,25 @@ Includes all EMF Transaction features.
 </dependency>
 ----
 
+.EMF Codegen
+[source, xml]
+----
+<dependency>
+    <groupId>org.atlanmod.emf</groupId>
+    <artifactId>org.eclipse.emf.codegen</artifactId>
+    <type>pom</type>
+    <version>${atlanmod.emf.version}</version>
+</dependency>
+----
+
+
 == Build steps
 
 === Versioning
 
 When building you should first make sure that the pom and manifest versions are compatible.
 
-When pom versions end with `-SNAPSHOT`, `Bundle-Version` in al MANIFEST.MF files should end with `.qualifier`.
+When pom versions end with `-SNAPSHOT`, `Bundle-Version` in all MANIFEST.MF files should end with `.qualifier`.
 When pom versions don't have `-SNAPSHOT`, remove `.qualifier` in MANIFEST files.
 
 === Building
