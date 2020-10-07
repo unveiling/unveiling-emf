@@ -7,6 +7,17 @@
 
     <packaging>pom</packaging>
 
+
+    <properties>
+        <emf.version>2.23</emf.version>
+        <eclipse.version>2020-12</eclipse.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.fork>true</maven.compiler.fork>
+        <eclipse.platform.version>[3.6.0,4.0.0)</eclipse.platform.version>
+        <tycho.version>1.7.0</tycho.version>
+    </properties>
+
     <licenses>
         <license>
             <name>EPL</name>
@@ -77,15 +88,8 @@
         <repository>
             <id>photon</id>
             <layout>p2</layout>
-            <url>http://download.eclipse.org/releases/2020-12/</url>
+            <url>http://download.eclipse.org/releases/${eclipse.version}/</url>
         </repository>
-        <!--
-        <repository>
-            <id>tools</id>
-            <layout>p2</layout>
-            <url>http://www.elver.org/eclipse/2.1.0/update/</url>
-        </repository>
-        -->
         <repository>
             <id>emf</id>
             <layout>p2</layout>
@@ -102,15 +106,6 @@
             </plugin>
         </plugins>
     </build>
-
-    <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.fork>true</maven.compiler.fork>
-        <eclipse.platform.version>[3.6.0,4.0.0)</eclipse.platform.version>
-        <emf.version>2.23</emf.version>
-        <tycho.version>1.7.0</tycho.version>
-    </properties>
 
     <distributionManagement>
         <repository>

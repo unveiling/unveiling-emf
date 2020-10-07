@@ -5,9 +5,26 @@
         <groupId>org.atlanmod.emf</groupId>
         <version>2.23.0</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <artifactId>org.eclipse.emf.ecore</artifactId>
     <packaging>pom</packaging>
+
+    <description>
+        Eclipse EMF Ecore repackaging.
+        Contains the following plugins: org.eclipse.emf.ecore,
+        org.eclipse.emf.ecore.change,
+        org.eclipse.emf.ecore.change.edit,
+        org.eclipse.emf.ecore.change.edit.source,
+        org.eclipse.emf.ecore.change.source,
+        org.eclipse.emf.ecore.edit,
+        org.eclipse.emf.ecore.edit.source,
+        org.eclipse.emf.ecore.editor,
+        org.eclipse.emf.ecore.editor.source,
+        org.eclipse.emf.ecore.source,
+        org.eclipse.emf.ecore.xmi, and
+        org.eclipse.emf.ecore.xmi.source
+    </description>
 
     <dependencies>
         <dependency>

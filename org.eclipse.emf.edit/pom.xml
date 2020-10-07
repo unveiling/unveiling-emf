@@ -9,6 +9,11 @@
     <artifactId>org.eclipse.emf.edit</artifactId>
     <packaging>pom</packaging>
 
+    <description>
+        Eclipse EMF Edit repackaging.
+        Contains org.eclipse.emf.edit and org.eclipse.emf.edit.ui
+    </description>
+
     <dependencies>
         <dependency>
             <groupId>org.atlanmod.emf</groupId>

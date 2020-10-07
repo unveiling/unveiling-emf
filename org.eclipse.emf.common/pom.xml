@@ -9,6 +9,11 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>org.eclipse.emf.common</artifactId>
     <packaging>pom</packaging>
+    <description>
+        Eclipse EMF Common repackaging.
+        Contains org.eclipse.emf.common and org.eclipse.emf.common.ui
+    </description>
+
 
     <dependencies>
         <dependency>
