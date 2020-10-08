@@ -3,7 +3,7 @@
     <parent>
         <artifactId>emf-maven-parent</artifactId>
         <groupId>org.atlanmod.emf</groupId>
-        <version>2.23.0</version>
+        <version>2.15.0</version>
         <relativePath>../../emf-maven-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -27,7 +27,4 @@
         </artifact.ids>
     </properties>
 
-  <scm>
-    <tag>emf-maven-2.23.0</tag>
-  </scm>
 </project>

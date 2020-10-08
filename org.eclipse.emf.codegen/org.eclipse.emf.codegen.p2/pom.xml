@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <artifactId>emf-maven-parent</artifactId>
         <groupId>org.atlanmod.emf</groupId>
-        <version>2.23.0</version>
-        <relativePath>../../emf-maven-parent/pom.xml</relativePath>
+        <version>2.15.0</version>
+        <relativePath>../../emf-maven-parent/</relativePath>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
+
     <artifactId>org.eclipse.emf.codegen.p2</artifactId>
     <packaging>eclipse-plugin</packaging>
 
@@ -18,8 +20,4 @@
             org.eclipse.emf.codegen.ui
         </artifact.ids>
     </properties>
-
-  <scm>
-    <tag>emf-maven-2.23.0</tag>
-  </scm>
 </project>
