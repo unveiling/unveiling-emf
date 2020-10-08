@@ -26,8 +26,4 @@
             org.eclipse.emf.ecore.xmi.source
         </artifact.ids>
     </properties>
-
-  <scm>
-    <tag>emf-maven-2.23.0</tag>
-  </scm>
 </project>

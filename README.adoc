@@ -16,7 +16,7 @@ The builds on Bintray are available https://dl.bintray.com/sunye/AtlanMod[here].
 
 | 2.15.x
 | 2.15
-| 4.9
+| Oxygen
 |===
 
 == Usage

@@ -18,8 +18,4 @@
             org.eclipse.emf.codegen.ui
         </artifact.ids>
     </properties>
-
-  <scm>
-    <tag>emf-maven-2.23.0</tag>
-  </scm>
 </project>
