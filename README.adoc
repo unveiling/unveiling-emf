@@ -122,3 +122,12 @@ followed by:
 ----
 mvn release:perform
 ----
+
+=== Update POM and MANIFEST.MF versions
+
+[source,shell]
+----
+mvn versions:set -DnewVersion=2.23.1-SNAPSHOT -DautoVersionSubmodules=true
+mvn -f unveil-emf-repackaged tycho-versions:set-version -D newVersion=2.23.1-SNAPSHOT
+mvn -f unveil-emf-repackaged tycho-versions:update-eclipse-metadata
+----

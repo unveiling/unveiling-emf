@@ -9,7 +9,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>unveil-emf-parent</artifactId>
+    <artifactId>unveil-emf-repackaged</artifactId>
     <packaging>pom</packaging>
 
     <properties>
@@ -18,8 +18,19 @@
         <tycho.version>2.0.0</tycho.version>
     </properties>
 
+    <modules>
+        <module>org.eclipse.emf.codegen.p2</module>
+        <module>org.eclipse.emf.common.p2</module>
+        <module>org.eclipse.emf.ecore.p2</module>
+        <module>org.eclipse.emf.edit.p2</module>
+    </modules>
+
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>tycho-versions-plugin</artifactId>
+            </plugin>
             <plugin>
                 <groupId>org.eclipse.tycho</groupId>
                 <artifactId>tycho-maven-plugin</artifactId>
@@ -72,6 +83,11 @@
 
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-versions-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                </plugin>
                 <plugin>
                     <groupId>org.eclipse.tycho</groupId>
                     <artifactId>tycho-maven-plugin</artifactId>

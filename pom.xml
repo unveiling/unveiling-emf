@@ -43,15 +43,11 @@
   </scm>
 
     <modules>
-        <module>unveil-emf-parent</module>
+        <module>unveil-emf-repackaged</module>
         <module>org.eclipse.emf.codegen</module>
-        <module>org.eclipse.emf.codegen/org.eclipse.emf.codegen.p2</module>
         <module>org.eclipse.emf.ecore</module>
-        <module>org.eclipse.emf.ecore/org.eclipse.emf.ecore.p2</module>
         <module>org.eclipse.emf.common</module>
-        <module>org.eclipse.emf.common/org.eclipse.emf.common.p2</module>
         <module>org.eclipse.emf.edit</module>
-        <module>org.eclipse.emf.edit/org.eclipse.emf.edit.p2</module>
     </modules>
 
     <dependencyManagement>
