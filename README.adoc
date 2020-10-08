@@ -3,12 +3,12 @@
 This repository contains the maven artifacts necessary to build and release Eclipse http://wiki.eclipse.org/EMF[EMF] plugins and features
 onto https://bintray.com[Bintray] or to simply build it on your machine.
 
-The builds on Bintray are available https://dl.bintray.com/sunye/AtlanMod[here].
+The builds on Bintray are available https://dl.bintray.com/atlanmod/unveil[here].
 
 == Available versions
 
 |===
-| EMF-Maven version | EMF Version | Eclipse Version
+| Unveil EMF Version | Eclipse EMF Version | Eclipse Version
 
 | 2.23.x
 | 2.23
@@ -21,7 +21,7 @@ The builds on Bintray are available https://dl.bintray.com/sunye/AtlanMod[here].
 
 == Usage
 
-Add the following repository to your `pom.xml` and then choose which EMF dependencies you want to use in your maven project:
+Add the following repository to your `pom.xml` and then choose which EMF dependencies you want to use in your Maven project:
 
 [source, xml]
 ----
@@ -33,32 +33,32 @@ Add the following repository to your `pom.xml` and then choose which EMF depende
             </snapshots>
             <id>bintray-atlanmod</id>
             <name>bintray</name>
-            <url>https://dl.bintray.com/sunye/AtlanMod</url>
+            <url>https://dl.bintray.com/atlanmod/unveil</url>
         </repository>
     </repositories>
 ----
 
 == Eclipse EMF Artifacts
 
-.EMF Commons
+.EMF Common Dependency
 [source, xml]
 ----
 <dependency>
-    <groupId>org.atlanmod.emf</groupId>
+    <groupId>org.atlanmod.unveil</groupId>
     <artifactId>org.eclipse.emf.common</artifactId>
     <type>pom</type>
-    <version>${atlanmod.emf.version}</version>
+    <version>${unveil.emf.version}</version>
 </dependency>
 ----
 
-.EMF Ecore
+.EMF Ecore Dependency
 [source, xml]
 ----
 <dependency>
-    <groupId>org.atlanmod.emf</groupId>
+    <groupId>org.atlanmod.unveil</groupId>
     <artifactId>org.eclipse.emf.ecore</artifactId>
     <type>pom</type>
-    <version>${atlanmod.emf.version}</version>
+    <version>${unveil.emf.version}</version>
 </dependency>
 ----
 
@@ -66,10 +66,10 @@ Add the following repository to your `pom.xml` and then choose which EMF depende
 [source, xml]
 ----
 <dependency>
-    <groupId>org.atlanmod.emf</groupId>
+    <groupId>org.atlanmod.unveil</groupId>
     <artifactId>org.eclipse.emf.edit</artifactId>
     <type>pom</type>
-    <version>${atlanmod.emf.version}</version>
+    <version>${unveil.emf.version}</version>
 </dependency>
 ----
 
@@ -80,7 +80,7 @@ Add the following repository to your `pom.xml` and then choose which EMF depende
     <groupId>org.atlanmod.emf</groupId>
     <artifactId>org.eclipse.emf.codegen</artifactId>
     <type>pom</type>
-    <version>${atlanmod.emf.version}</version>
+    <version>${unveil.emf.version}</version>
 </dependency>
 ----
 
