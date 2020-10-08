@@ -2,10 +2,10 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>emf-maven-parent</artifactId>
-        <groupId>org.atlanmod.emf</groupId>
+        <artifactId>unveil-emf-parent</artifactId>
+        <groupId>org.atlanmod.unveil</groupId>
         <version>2.23.0</version>
-        <relativePath>../../emf-maven-parent/pom.xml</relativePath>
+        <relativePath>../../unveil-emf-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>org.eclipse.emf.edit.p2</artifactId>

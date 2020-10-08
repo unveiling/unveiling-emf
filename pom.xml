@@ -1,10 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.atlanmod.emf</groupId>
-    <artifactId>emf-maven</artifactId>
+    <groupId>org.atlanmod.unveil</groupId>
+    <artifactId>unveil-emf</artifactId>
     <version>2.23.0</version>
-
     <packaging>pom</packaging>
 
 
@@ -15,7 +14,6 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.fork>true</maven.compiler.fork>
         <eclipse.platform.version>[3.6.0,4.0.0)</eclipse.platform.version>
-        <tycho.version>1.7.0</tycho.version>
     </properties>
 
     <licenses>
@@ -27,7 +25,7 @@
 
     <issueManagement>
         <system>GitHub Issues</system>
-        <url>https://github.com/sunye/emf-maven/issues</url>
+        <url>https://github.com/atlanmod/unveil-emf/issues</url>
     </issueManagement>
 
     <developers>
@@ -39,10 +37,9 @@
     </developers>
 
     <scm>
-        <url>scm:git:git@github.com:sunye/emf-maven.git</url>
-        <connection>scm:git:git@github.com:sunye/emf-maven.git</connection>
-        <developerConnection>scm:git:git@github.com:sunye/emf-maven.git</developerConnection>
-      <tag>emf-maven-2.23.0</tag>
+        <url>scm:git:git@github.com:atlanmod/unveil-emf.git</url>
+        <connection>scm:git:git@github.com:atlanmod/unveil-emf.git</connection>
+        <developerConnection>scm:git:git@github.com:atlanmod/unveil-emf.git</developerConnection>
   </scm>
 
     <modules>
@@ -102,16 +99,29 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.2.0</version>
             </plugin>
         </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>3.2.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 
     <distributionManagement>
         <repository>
             <id>bintray-sunye</id>
             <name>sunye-atlanMod</name>
-            <url>https://api.bintray.com/maven/sunye/AtlanMod/emf-maven/;publish=1</url>
+            <url>https://api.bintray.com/maven/atlanmod/unveil/unveil-emf/;publish=1</url>
         </repository>
     </distributionManagement>
 </project>

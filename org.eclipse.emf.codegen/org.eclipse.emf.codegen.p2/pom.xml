@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>emf-maven-parent</artifactId>
-        <groupId>org.atlanmod.emf</groupId>
-        <version>2.23.0</version>
-        <relativePath>../../emf-maven-parent/pom.xml</relativePath>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>unveil-emf-parent</artifactId>
+        <groupId>org.atlanmod.unveil</groupId>
+        <version>2.23.0</version>
+        <relativePath>../../unveil-emf-parent/pom.xml</relativePath>
+    </parent>
+
     <artifactId>org.eclipse.emf.codegen.p2</artifactId>
     <packaging>eclipse-plugin</packaging>
 
