@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: EMF
+Bundle-SymbolicName: org.eclipse.emf.codegen.p2
+Bundle-Version: 2.23.1.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.emf.codegen,
+ org.eclipse.emf.codegen.ecore,
+ org.eclipse.emf.codegen.ecore.ui,
+ org.eclipse.emf.codegen.ui
