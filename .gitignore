@@ -7,17 +7,19 @@ pom.xml.next
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
+*.versionsBackup
 
 ## Eclipse
 .mvn/timing.properties
 .project
 .classpath
 .settings/
-*.versionsBackup
-java-gen
+java-gen/
+
+## IntelliJ IDEA
 .idea/
 *.iml
-.java-version
 
 ## MAC Files
 .DS_Store
+.java-version
