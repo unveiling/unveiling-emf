@@ -9,6 +9,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>org.eclipse.emf.common</artifactId>
     <packaging>pom</packaging>
+
     <description>
         Eclipse EMF Common repackaging.
         Contains org.eclipse.emf.common and org.eclipse.emf.common.ui
@@ -17,11 +18,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.atlanmod.emf</groupId>
+            <groupId>org.atlanmod.unveil</groupId>
             <artifactId>org.eclipse.emf.common.p2</artifactId>
             <version>${project.version}</version>
             <classifier>repackaged</classifier>
         </dependency>
+
         <dependency>
             <groupId>org.eclipse.core</groupId>
             <artifactId>org.eclipse.core.runtime</artifactId>

@@ -21,15 +21,15 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.atlanmod.emf</groupId>
+            <groupId>org.atlanmod.unveil</groupId>
             <artifactId>org.eclipse.emf.codegen.p2</artifactId>
             <version>${project.version}</version>
             <classifier>repackaged</classifier>
         </dependency>
         <dependency>
-            <groupId>org.atlanmod.emf</groupId>
+            <groupId>org.atlanmod.unveil</groupId>
             <artifactId>org.eclipse.emf.common</artifactId>
-            <version>${project.version}</version>
+            <version>2.23.1-SNAPSHOT</version>
             <type>pom</type>
         </dependency>
     </dependencies>

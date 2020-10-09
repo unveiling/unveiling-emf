@@ -16,22 +16,22 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.atlanmod.emf</groupId>
+            <groupId>org.atlanmod.unveil</groupId>
             <artifactId>org.eclipse.emf.edit.p2</artifactId>
-            <version>${project.version}</version>
+            <version>2.23.1-SNAPSHOT</version>
             <classifier>repackaged</classifier>
         </dependency>
         <dependency>
-            <groupId>org.atlanmod.emf</groupId>
+            <groupId>org.atlanmod.unveil</groupId>
             <artifactId>org.eclipse.emf.common</artifactId>
             <type>pom</type>
-            <version>${project.version}</version>
+            <version>2.23.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>org.atlanmod.emf</groupId>
+            <groupId>org.atlanmod.unveil</groupId>
             <artifactId>org.eclipse.emf.ecore</artifactId>
             <type>pom</type>
-            <version>${project.version}</version>
+            <version>2.23.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.core</groupId>
