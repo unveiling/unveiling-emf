@@ -129,10 +129,59 @@
 
     <profiles>
         <profile>
+            <id>2.22.0</id>
+            <properties>
+                <emf.version>2.22</emf.version>
+                <eclipse.version>2020-06</eclipse.version>
+            </properties>
+        </profile>
+        <profile>
+            <id>2.21.0</id>
+            <properties>
+                <emf.version>2.21</emf.version>
+                <eclipse.version>2020-03</eclipse.version>
+            </properties>
+        </profile>
+        <profile>
+            <id>2.20.0</id>
+            <properties>
+                <emf.version>2.20</emf.version>
+                <eclipse.version>2019-12</eclipse.version>
+            </properties>
+        </profile>
+        <profile>
+            <id>2.19.0</id>
+            <properties>
+                <emf.version>2.19</emf.version>
+                <eclipse.version>2019-09</eclipse.version>
+            </properties>
+        </profile>
+        <profile>
+            <id>2.18.0</id>
+            <properties>
+                <emf.version>2.18</emf.version>
+                <eclipse.version>2019-06</eclipse.version>
+            </properties>
+        </profile>
+        <profile>
+            <id>2.17.0</id>
+            <properties>
+                <emf.version>2.17</emf.version>
+                <eclipse.version>2019-03</eclipse.version>
+            </properties>
+        </profile>
+        <profile>
+            <id>2.16.0</id>
+            <properties>
+                <emf.version>2.16</emf.version>
+                <eclipse.version>2018-12</eclipse.version>
+            </properties>
+        </profile>
+        <profile>
             <id>2.15.0</id>
             <properties>
                 <emf.version>2.15</emf.version>
-                <eclipse.version>oxygen</eclipse.version>
+                <eclipse.version>2018-09</eclipse.version>
             </properties>
         </profile>
     </profiles>
