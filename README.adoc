@@ -3,12 +3,12 @@
 This repository contains the maven artifacts necessary to build and release Eclipse http://wiki.eclipse.org/EMF[EMF] plugins and features
 onto https://bintray.com[Bintray] or to simply build it on your machine.
 
-The builds on Bintray are available https://dl.bintray.com/atlanmod/unveil[here].
+The builds on Bintray are available https://dl.bintray.com/atlanmod/unveiling[here].
 
 == Available versions
 
 |===
-| Unveil EMF Version | Eclipse EMF Version | Eclipse Version
+| unveiling EMF Version | Eclipse EMF Version | Eclipse Version
 
 | 2.23.x
 | 2.23
@@ -61,7 +61,7 @@ Add the following repository to your `pom.xml` and then choose which EMF depende
             </snapshots>
             <id>bintray-atlanmod</id>
             <name>bintray</name>
-            <url>https://dl.bintray.com/atlanmod/unveil</url>
+            <url>https://dl.bintray.com/atlanmod/unveiling</url>
         </repository>
     </repositories>
 ----
@@ -72,10 +72,10 @@ Add the following repository to your `pom.xml` and then choose which EMF depende
 [source, xml]
 ----
 <dependency>
-    <groupId>org.atlanmod.unveil</groupId>
+    <groupId>org.atlanmod.unveiling</groupId>
     <artifactId>org.eclipse.emf.common</artifactId>
     <type>pom</type>
-    <version>${unveil.emf.version}</version>
+    <version>${unveiling.emf.version}</version>
 </dependency>
 ----
 
@@ -83,10 +83,10 @@ Add the following repository to your `pom.xml` and then choose which EMF depende
 [source, xml]
 ----
 <dependency>
-    <groupId>org.atlanmod.unveil</groupId>
+    <groupId>org.atlanmod.unveiling</groupId>
     <artifactId>org.eclipse.emf.ecore</artifactId>
     <type>pom</type>
-    <version>${unveil.emf.version}</version>
+    <version>${unveiling.emf.version}</version>
 </dependency>
 ----
 
@@ -94,10 +94,10 @@ Add the following repository to your `pom.xml` and then choose which EMF depende
 [source, xml]
 ----
 <dependency>
-    <groupId>org.atlanmod.unveil</groupId>
+    <groupId>org.atlanmod.unveiling</groupId>
     <artifactId>org.eclipse.emf.edit</artifactId>
     <type>pom</type>
-    <version>${unveil.emf.version}</version>
+    <version>${unveiling.emf.version}</version>
 </dependency>
 ----
 
@@ -108,7 +108,7 @@ Add the following repository to your `pom.xml` and then choose which EMF depende
     <groupId>org.atlanmod.emf</groupId>
     <artifactId>org.eclipse.emf.codegen</artifactId>
     <type>pom</type>
-    <version>${unveil.emf.version}</version>
+    <version>${unveiling.emf.version}</version>
 </dependency>
 ----
 
@@ -156,6 +156,6 @@ mvn release:perform
 [source,shell]
 ----
 mvn versions:set -DnewVersion=2.23.1-SNAPSHOT -DautoVersionSubmodules=true
-mvn -f unveil-emf-repackaged tycho-versions:set-version -D newVersion=2.23.1-SNAPSHOT
-mvn -f unveil-emf-repackaged tycho-versions:update-eclipse-metadata
+mvn -f unveiling-emf-repackaged tycho-versions:set-version -D newVersion=2.23.1-SNAPSHOT
+mvn -f unveiling-emf-repackaged tycho-versions:update-eclipse-metadata
 ----

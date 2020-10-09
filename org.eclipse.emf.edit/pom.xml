@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>unveil-emf</artifactId>
-        <groupId>org.atlanmod.unveil</groupId>
+        <artifactId>unveiling-emf</artifactId>
+        <groupId>org.atlanmod.unveiling</groupId>
         <version>2.23.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -16,19 +16,19 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.atlanmod.unveil</groupId>
+            <groupId>org.atlanmod.unveiling</groupId>
             <artifactId>org.eclipse.emf.edit.p2</artifactId>
             <version>2.23.1-SNAPSHOT</version>
             <classifier>repackaged</classifier>
         </dependency>
         <dependency>
-            <groupId>org.atlanmod.unveil</groupId>
+            <groupId>org.atlanmod.unveiling</groupId>
             <artifactId>org.eclipse.emf.common</artifactId>
             <type>pom</type>
             <version>2.23.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>org.atlanmod.unveil</groupId>
+            <groupId>org.atlanmod.unveiling</groupId>
             <artifactId>org.eclipse.emf.ecore</artifactId>
             <type>pom</type>
             <version>2.23.1-SNAPSHOT</version>
