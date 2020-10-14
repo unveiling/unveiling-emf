@@ -8,7 +8,7 @@ The builds on Bintray are available https://dl.bintray.com/atlanmod/unveiling[he
 == Available versions
 
 |===
-| unveiling EMF Version | Eclipse EMF Version | Eclipse Version
+| Unveiling EMF Version | Eclipse EMF Version | Eclipse Version
 
 | 2.23.x
 | 2.23
