@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: EMF
+Bundle-SymbolicName: org.eclipse.emf.ecore.xcore.p2
+Bundle-Version: 2.18.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.emf.ecore.xcore,
+  org.eclipse.emf.ecore.xcore.edit,
+  org.eclipse.emf.ecore.xcore.edit.source,
+  org.eclipse.emf.ecore.xcore.source,
+  org.eclipse.emf.ecore.xcore.lib
